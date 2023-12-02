@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Twenty</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .open_modal,
+      .close_modal {
+        background-color: coral;
+        color: white;
+        font-size: 24px;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: 300ms;
+      }
+      .open_modal:hover,
+      .close_modal:hover {
+        background-color: crimson;
+      }
+      .modal {
+        background-color: white;
+        width: 512px;
+        box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.125);
+        padding: 50px;
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 100;
+        transform: translate(-50%, -50%);
+      }
+      .modal > h2 {
+        font-size: 32px;
+      }
+      .modal > p {
+        opacity: 0.75;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+      <h1 id="heading">This is DOM</h1>
+
+      <p class="para1">
+        What is DOM? DOM means; Document Object Model. Its one kind of API
+        provided by Web Browser.
+      </p>
+
+      <p class="para1">
+        What is API? API means; Application Programming Interface
+      </p>
+
+      <p class="para2">
+        What is Document? DOCUMENT means; what ever we write in HTML.
+      </p>
+    </div> -->
+    <!-- <div>
+      <h1 class="my_title">Hello Bangladesh</h1>
+    </div> -->
+    <!-- <div class="container"></div> -->
+
+    <!-- <div>
+      <button class="my_button">Click Me</button>
+    </div> -->
+
+    <button class="open_modal">Open Modal</button>
+    <!-- modal -->
+    <div class="modal hidden">
+      <h2>This is a modal</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+        excepturi ex! Itaque atque expedita distinctio. Blanditiis atque dicta
+        est impedit, architecto corporis, fugiat sit distinctio, laudantium
+        aspernatur reprehenderit ad aliquid.
+      </p>
+      <button class="close_modal">Close Modal</button>
+    </div>
+    <script src="./class-20.js"></script>
+  </body>
+</html>
